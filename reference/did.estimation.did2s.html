@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.557">
+<meta name="generator" content="quarto-1.5.57">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -114,7 +114,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -128,12 +128,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text">Quickstart</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="../compare-fixest-pyfixest.html"> 
+<span class="menu-text">Compare fixest &amp; pyfixest</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="../difference-in-differences.html"> 
 <span class="menu-text">Difference-in-Differences Estimation</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../replicating-the-effect.html"> 
 <span class="menu-text">Replicating ‘The Effect’ with PyFixest</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../stargazer.html"> 
+<span class="menu-text">Regression Tables with <code>pf.etable()</code> and <code>Stargazer</code></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../marginaleffects.html"> 
+<span class="menu-text">Hypothesis testing and Marginal Effects with <code>py-marginaleffects</code></span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="../reference/index.html" aria-current="page"> 
@@ -156,17 +168,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
-          <div class="quarto-navbar-tools">
+            <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
     </nav>
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../reference/estimation.feols.html">Estimation Functions</a></li><li class="breadcrumb-item"><a href="../reference/did.estimation.did2s.html">did.estimation.did2s</a></li></ol></nav>
-        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
   </nav>
@@ -185,9 +197,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
  <span class="menu-text">Estimation Functions</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -238,9 +250,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
  <span class="menu-text">Estimation Classes</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -267,9 +279,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
  <span class="menu-text">Summarize and Visualize</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -302,9 +314,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
  <span class="menu-text">Misc / Utilities</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -439,7 +451,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="examples" class="level2">
 <h2 class="anchored" data-anchor-id="examples">Examples</h2>
-<div id="68909ff7" class="cell" data-execution_count="1">
+<div id="d5a7bad3" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pyfixest.did.estimation <span class="im">import</span> did2s</span>
@@ -449,7 +461,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>df_het.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 
-            <div id="P2xhi2"></div>
+            <div id="6cYAC0"></div>
             <script type="text/javascript" data-lets-plot-script="library">
                 if(!window.letsPlotCallQueue) {
                     window.letsPlotCallQueue = [];
@@ -460,7 +472,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
                 (function() {
                     var script = document.createElement("script");
                     script.type = "text/javascript";
-                    script.src = "https://cdn.jsdelivr.net/gh/JetBrains/lets-plot@v4.3.3/js-package/distr/lets-plot.min.js";
+                    script.src = "https://cdn.jsdelivr.net/gh/JetBrains/lets-plot@v4.4.1/js-package/distr/lets-plot.min.js";
                     script.onload = function() {
                         window.letsPlotCall = function(f) {f();};
                         window.letsPlotCallQueue.forEach(function(f) {f();});
@@ -473,9 +485,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
                         var div = document.createElement("div");
                         div.style.color = 'darkred';
                         div.textContent = 'Error loading Lets-Plot JS';
-                        document.getElementById("P2xhi2").appendChild(div);
+                        document.getElementById("6cYAC0").appendChild(div);
                     };
-                    var e = document.getElementById("P2xhi2");
+                    var e = document.getElementById("6cYAC0");
                     e.appendChild(script);
                 })()
             </script>
@@ -483,7 +495,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div class="cell-output cell-output-display">
 
-            <div id="ua6mRw"></div>
+            <div id="UBJ6Q4"></div>
             <script type="text/javascript" data-lets-plot-script="library">
                 if(!window.letsPlotCallQueue) {
                     window.letsPlotCallQueue = [];
@@ -494,7 +506,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
                 (function() {
                     var script = document.createElement("script");
                     script.type = "text/javascript";
-                    script.src = "https://cdn.jsdelivr.net/gh/JetBrains/lets-plot@v4.3.3/js-package/distr/lets-plot.min.js";
+                    script.src = "https://cdn.jsdelivr.net/gh/JetBrains/lets-plot@v4.4.1/js-package/distr/lets-plot.min.js";
                     script.onload = function() {
                         window.letsPlotCall = function(f) {f();};
                         window.letsPlotCallQueue.forEach(function(f) {f();});
@@ -507,9 +519,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
                         var div = document.createElement("div");
                         div.style.color = 'darkred';
                         div.textContent = 'Error loading Lets-Plot JS';
-                        document.getElementById("ua6mRw").appendChild(div);
+                        document.getElementById("UBJ6Q4").appendChild(div);
                     };
-                    var e = document.getElementById("ua6mRw");
+                    var e = document.getElementById("UBJ6Q4");
                     e.appendChild(script);
                 })()
             </script>
@@ -632,7 +644,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <p>In a first step, we estimate a classical event study model:</p>
-<div id="046b6cb7" class="cell" data-execution_count="2">
+<div id="78ba6bb7" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># estimate the model</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>fit <span class="op">=</span> did2s(</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    df_het,</span>
@@ -671,49 +683,49 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </thead>
 <tbody>
 <tr class="odd">
+<td data-quarto-table-cell-role="th">C(rel_year, contr.treatment(base=-1.0))[T.-inf]</td>
+<td>-3.551930e-08</td>
+<td>5.844125e-09</td>
+<td>-6.077778</td>
+<td>1.218593e-09</td>
+<td>-4.697357e-08</td>
+<td>-2.406502e-08</td>
+</tr>
+<tr class="even">
 <td data-quarto-table-cell-role="th">C(rel_year, contr.treatment(base=-1.0))[T.-20.0]</td>
-<td>-0.058226</td>
-<td>0.035809</td>
+<td>-5.822583e-02</td>
+<td>3.580900e-02</td>
 <td>-1.626011</td>
-<td>0.103954</td>
-<td>-0.128412</td>
-<td>0.011960</td>
+<td>1.039473e-01</td>
+<td>-1.284102e-01</td>
+<td>1.195852e-02</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td data-quarto-table-cell-role="th">C(rel_year, contr.treatment(base=-1.0))[T.-19.0]</td>
-<td>-0.006032</td>
-<td>0.030341</td>
+<td>-6.032212e-03</td>
+<td>3.034072e-02</td>
 <td>-0.198816</td>
-<td>0.842408</td>
-<td>-0.065500</td>
-<td>0.053436</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">C(rel_year, contr.treatment(base=-1.0))[T.-18.0]</td>
-<td>-0.006152</td>
-<td>0.035094</td>
-<td>-0.175310</td>
-<td>0.860837</td>
-<td>-0.074937</td>
-<td>0.062632</td>
+<td>8.424069e-01</td>
+<td>-6.549894e-02</td>
+<td>5.343451e-02</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">C(rel_year, contr.treatment(base=-1.0))[T.-17.0]</td>
-<td>-0.012533</td>
-<td>0.024834</td>
-<td>-0.504689</td>
-<td>0.613780</td>
-<td>-0.061208</td>
-<td>0.036141</td>
+<td data-quarto-table-cell-role="th">C(rel_year, contr.treatment(base=-1.0))[T.-18.0]</td>
+<td>-6.152375e-03</td>
+<td>3.509400e-02</td>
+<td>-0.175311</td>
+<td>8.608350e-01</td>
+<td>-7.493535e-02</td>
+<td>6.263060e-02</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">C(rel_year, contr.treatment(base=-1.0))[T.-16.0]</td>
-<td>-0.034698</td>
-<td>0.029806</td>
-<td>-1.164128</td>
-<td>0.244378</td>
-<td>-0.093117</td>
-<td>0.023722</td>
+<td data-quarto-table-cell-role="th">C(rel_year, contr.treatment(base=-1.0))[T.-17.0]</td>
+<td>-1.253327e-02</td>
+<td>2.483369e-02</td>
+<td>-0.504688</td>
+<td>6.137779e-01</td>
+<td>-6.120641e-02</td>
+<td>3.613987e-02</td>
 </tr>
 </tbody>
 </table>
@@ -722,19 +734,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <p>We can also inspect the model visually:</p>
-<div id="e1ff60f6" class="cell" data-execution_count="3">
+<div id="54743bbd" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>fit.iplot(figsize<span class="op">=</span> [<span class="dv">1200</span>, <span class="dv">400</span>], coord_flip<span class="op">=</span><span class="va">False</span>).show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
-   <div id="0didqg"></div>
+   <div id="Dv8LC8"></div>
    <script type="text/javascript" data-lets-plot-script="plot">
        (function() {
            var plotSpec={
 "data":{
-"Model":["dep_var_hat~i(rel_year,ref=-1.0)","dep_var_hat~i(rel_year,ref=-1.0)","dep_var_hat~i(rel_year,ref=-1.0)","dep_var_hat~i(rel_year,ref=-1.0)","dep_var_hat~i(rel_year,ref=-1.0)","dep_var_hat~i(rel_year,ref=-1.0)","dep_var_hat~i(rel_year,ref=-1.0)","dep_var_hat~i(rel_year,ref=-1.0)","dep_var_hat~i(rel_year,ref=-1.0)","dep_var_hat~i(rel_year,ref=-1.0)","dep_var_hat~i(rel_year,ref=-1.0)","dep_var_hat~i(rel_year,ref=-1.0)","dep_var_hat~i(rel_year,ref=-1.0)","dep_var_hat~i(rel_year,ref=-1.0)","dep_var_hat~i(rel_year,ref=-1.0)","dep_var_hat~i(rel_year,ref=-1.0)","dep_var_hat~i(rel_year,ref=-1.0)","dep_var_hat~i(rel_year,ref=-1.0)","dep_var_hat~i(rel_year,ref=-1.0)","dep_var_hat~i(rel_year,ref=-1.0)","dep_var_hat~i(rel_year,ref=-1.0)","dep_var_hat~i(rel_year,ref=-1.0)","dep_var_hat~i(rel_year,ref=-1.0)","dep_var_hat~i(rel_year,ref=-1.0)","dep_var_hat~i(rel_year,ref=-1.0)","dep_var_hat~i(rel_year,ref=-1.0)","dep_var_hat~i(rel_year,ref=-1.0)","dep_var_hat~i(rel_year,ref=-1.0)","dep_var_hat~i(rel_year,ref=-1.0)","dep_var_hat~i(rel_year,ref=-1.0)","dep_var_hat~i(rel_year,ref=-1.0)","dep_var_hat~i(rel_year,ref=-1.0)","dep_var_hat~i(rel_year,ref=-1.0)","dep_var_hat~i(rel_year,ref=-1.0)","dep_var_hat~i(rel_year,ref=-1.0)","dep_var_hat~i(rel_year,ref=-1.0)","dep_var_hat~i(rel_year,ref=-1.0)","dep_var_hat~i(rel_year,ref=-1.0)","dep_var_hat~i(rel_year,ref=-1.0)","dep_var_hat~i(rel_year,ref=-1.0)","dep_var_hat~i(rel_year,ref=-1.0)"],
-"Coefficient":["C(rel_year, contr.treatment(base=-1.0))[T.-20.0]","C(rel_year, contr.treatment(base=-1.0))[T.-19.0]","C(rel_year, contr.treatment(base=-1.0))[T.-18.0]","C(rel_year, contr.treatment(base=-1.0))[T.-17.0]","C(rel_year, contr.treatment(base=-1.0))[T.-16.0]","C(rel_year, contr.treatment(base=-1.0))[T.-15.0]","C(rel_year, contr.treatment(base=-1.0))[T.-14.0]","C(rel_year, contr.treatment(base=-1.0))[T.-13.0]","C(rel_year, contr.treatment(base=-1.0))[T.-12.0]","C(rel_year, contr.treatment(base=-1.0))[T.-11.0]","C(rel_year, contr.treatment(base=-1.0))[T.-10.0]","C(rel_year, contr.treatment(base=-1.0))[T.-9.0]","C(rel_year, contr.treatment(base=-1.0))[T.-8.0]","C(rel_year, contr.treatment(base=-1.0))[T.-7.0]","C(rel_year, contr.treatment(base=-1.0))[T.-6.0]","C(rel_year, contr.treatment(base=-1.0))[T.-5.0]","C(rel_year, contr.treatment(base=-1.0))[T.-4.0]","C(rel_year, contr.treatment(base=-1.0))[T.-3.0]","C(rel_year, contr.treatment(base=-1.0))[T.-2.0]","C(rel_year, contr.treatment(base=-1.0))[T.0.0]","C(rel_year, contr.treatment(base=-1.0))[T.1.0]","C(rel_year, contr.treatment(base=-1.0))[T.2.0]","C(rel_year, contr.treatment(base=-1.0))[T.3.0]","C(rel_year, contr.treatment(base=-1.0))[T.4.0]","C(rel_year, contr.treatment(base=-1.0))[T.5.0]","C(rel_year, contr.treatment(base=-1.0))[T.6.0]","C(rel_year, contr.treatment(base=-1.0))[T.7.0]","C(rel_year, contr.treatment(base=-1.0))[T.8.0]","C(rel_year, contr.treatment(base=-1.0))[T.9.0]","C(rel_year, contr.treatment(base=-1.0))[T.10.0]","C(rel_year, contr.treatment(base=-1.0))[T.11.0]","C(rel_year, contr.treatment(base=-1.0))[T.12.0]","C(rel_year, contr.treatment(base=-1.0))[T.13.0]","C(rel_year, contr.treatment(base=-1.0))[T.14.0]","C(rel_year, contr.treatment(base=-1.0))[T.15.0]","C(rel_year, contr.treatment(base=-1.0))[T.16.0]","C(rel_year, contr.treatment(base=-1.0))[T.17.0]","C(rel_year, contr.treatment(base=-1.0))[T.18.0]","C(rel_year, contr.treatment(base=-1.0))[T.19.0]","C(rel_year, contr.treatment(base=-1.0))[T.20.0]","C(rel_year, contr.treatment(base=-1.0))[T.inf]"],
-"Estimate":[-0.05822583123897514,-0.00603221732066148,-0.006152342798184045,-0.012533281423170145,-0.03469759575835955,0.03782822911704116,2.131551080240848E-4,-0.001126732136243905,0.02653016582736613,-0.02684165619610552,0.007378430125950474,0.002339766828174979,0.009000046824501586,0.03275229921071828,2.5898768543797723E-4,-0.03932609663936738,0.00563043604808311,0.024642896748837257,0.0011694580442883928,1.3730783362807615,1.602102099215368,1.6657197999639688,1.7874633607018418,1.9149127581340715,2.059203329407784,2.147498951693235,2.2340156176588626,2.3275664995343,2.346379127927933,2.501338353651892,2.553442440691899,2.60440295572619,2.5785087342838495,2.7234332919385382,2.9097391719780377,2.8597896010903003,2.9084076146429667,2.8741426256232145,2.8832716967009673,2.9119654644504394,6.969771258357585E-16],
-"2.5%":[-0.1284120087780585,-0.0655004911842191,-0.07493711301879089,-0.06120768520337402,-0.09311711159609946,-0.025495390137412907,-0.0712540347191161,-0.0539893687943026,-0.03741495648560303,-0.10584306967635917,-0.038256457409167,-0.041167964876892976,-0.036431190074328657,-0.015536976768501437,-0.03908668688235897,-0.08535189823883754,-0.0333070268404073,-0.01710956915512721,-0.04801602016784254,1.2955886226306101,1.50309952636312,1.576957926426883,1.6884147340911766,1.8394048260447111,1.9763795866844442,2.053168865590604,2.146700607461382,2.2449840996058668,2.263582113408537,2.4173363771731076,2.4298809747320584,2.4658013100515013,2.4348096214832364,2.598272845002869,2.7733306413131493,2.7292249890057443,2.793965526071134,2.719372633874652,2.740249335453402,2.776801840384504,4.6777973484319E-16],
-"97.5%":[0.011960346300108227,0.05343605654289615,0.06263242742242278,0.03614112235703373,0.023721920079380357,0.10115184837149523,0.07168034493516426,0.05173590452181479,0.09047528814033529,0.052159757284148144,0.05301331766106794,0.045847498533242936,0.054431283723331836,0.081041575189938,0.03960466225323493,0.006699704960102783,0.04456789893657352,0.06639536265280173,0.05035493625641932,1.4505680499309128,1.7011046720676162,1.7544816735010547,1.886511987312507,1.9904206902234318,2.1420270721311234,2.241829037795866,2.321330627856343,2.4101488994627336,2.4291761424473286,2.585340330130676,2.6770039066517395,2.743004601400879,2.7222078470844626,2.8485937388742073,3.046147702642926,2.9903542131748564,3.0228497032147996,3.0289126173717773,3.0262940579485327,3.0471290885163747,9.26174516828327E-16]
+"Coefficient":["C(rel_year, contr.treatment(base=-1.0))[T.-inf]","C(rel_year, contr.treatment(base=-1.0))[T.-20.0]","C(rel_year, contr.treatment(base=-1.0))[T.-19.0]","C(rel_year, contr.treatment(base=-1.0))[T.-18.0]","C(rel_year, contr.treatment(base=-1.0))[T.-17.0]","C(rel_year, contr.treatment(base=-1.0))[T.-16.0]","C(rel_year, contr.treatment(base=-1.0))[T.-15.0]","C(rel_year, contr.treatment(base=-1.0))[T.-14.0]","C(rel_year, contr.treatment(base=-1.0))[T.-13.0]","C(rel_year, contr.treatment(base=-1.0))[T.-12.0]","C(rel_year, contr.treatment(base=-1.0))[T.-11.0]","C(rel_year, contr.treatment(base=-1.0))[T.-10.0]","C(rel_year, contr.treatment(base=-1.0))[T.-9.0]","C(rel_year, contr.treatment(base=-1.0))[T.-8.0]","C(rel_year, contr.treatment(base=-1.0))[T.-7.0]","C(rel_year, contr.treatment(base=-1.0))[T.-6.0]","C(rel_year, contr.treatment(base=-1.0))[T.-5.0]","C(rel_year, contr.treatment(base=-1.0))[T.-4.0]","C(rel_year, contr.treatment(base=-1.0))[T.-3.0]","C(rel_year, contr.treatment(base=-1.0))[T.-2.0]","C(rel_year, contr.treatment(base=-1.0))[T.0.0]","C(rel_year, contr.treatment(base=-1.0))[T.1.0]","C(rel_year, contr.treatment(base=-1.0))[T.2.0]","C(rel_year, contr.treatment(base=-1.0))[T.3.0]","C(rel_year, contr.treatment(base=-1.0))[T.4.0]","C(rel_year, contr.treatment(base=-1.0))[T.5.0]","C(rel_year, contr.treatment(base=-1.0))[T.6.0]","C(rel_year, contr.treatment(base=-1.0))[T.7.0]","C(rel_year, contr.treatment(base=-1.0))[T.8.0]","C(rel_year, contr.treatment(base=-1.0))[T.9.0]","C(rel_year, contr.treatment(base=-1.0))[T.10.0]","C(rel_year, contr.treatment(base=-1.0))[T.11.0]","C(rel_year, contr.treatment(base=-1.0))[T.12.0]","C(rel_year, contr.treatment(base=-1.0))[T.13.0]","C(rel_year, contr.treatment(base=-1.0))[T.14.0]","C(rel_year, contr.treatment(base=-1.0))[T.15.0]","C(rel_year, contr.treatment(base=-1.0))[T.16.0]","C(rel_year, contr.treatment(base=-1.0))[T.17.0]","C(rel_year, contr.treatment(base=-1.0))[T.18.0]","C(rel_year, contr.treatment(base=-1.0))[T.19.0]","C(rel_year, contr.treatment(base=-1.0))[T.20.0]"],
+"Estimate":[-3.551929536210318E-8,-0.05822583251533651,-0.006032211992613522,-0.006152375190415712,-0.012533269577187376,-0.034697606166936165,0.03782821313278836,2.1315091505167194E-4,-0.0011267317909735854,0.026530166495163123,-0.02684163867727671,0.007378356801149751,0.002339696605279026,0.008999954415031963,0.03275225811843527,2.589201081122684E-4,-0.03932617050693799,0.005630355477915762,0.024642835056253226,0.0011693818689868186,1.3730782812938136,1.6021020425516928,1.6657197436428295,1.7874633310303911,1.914912712719568,2.0592032799014506,2.1474988919626194,2.2340155728160327,2.327566440967995,2.346379081884324,2.501338373713534,2.5534424556739195,2.604402978845574,2.5785087568520995,2.7234333114983915,2.9097391899350957,2.859789620054618,2.9084076338706337,2.874142643269005,2.8832717144918742,2.9119654874923606],
+"2.5%":[-4.6973570138569173E-8,-0.1284101813337908,-0.06549893626239,-0.07493535325866821,-0.061206405097824546,-0.09311559965450923,-0.025493756418587685,-0.0712521766384395,-0.053987991104246284,-0.03741328904531539,-0.10584099511283683,-0.03825534134216755,-0.041166901517782774,-0.036430099106866065,-0.015535760278643604,-0.03908572914884598,-0.08535077259884066,-0.033306092715405876,-0.0171085428409314,-0.04801481500943306,1.2955905901648277,1.5031020502208015,1.576960190158618,1.688417288492222,1.8394067507887883,1.9763816980309759,2.0531712678765013,2.1467028389787615,2.244986194800676,2.2635842229642966,2.4173385863563346,2.429884207999323,2.4658049455295368,2.4348133883439895,2.5982761268452275,2.7733342138863026,2.729228409325892,2.793968526562037,2.7193766832983357,2.740253079238145,2.776805384783386],
+"97.5%":[-2.4065020585637184E-8,0.011958516303117804,0.053434512277162956,0.06263060287783678,0.0361398659434498,0.0237203873206369,0.10115018268416441,0.07167847846854283,0.051734527522299116,0.09047362203564165,0.052157717758283414,0.053012054944467056,0.04584629472834082,0.054430007936929994,0.08104027651551414,0.03960356936507051,0.006698431584964679,0.044566803671237394,0.06639421295343785,0.050353578747406695,1.4505659724227995,1.701102034882584,1.7544792971270409,1.8865093735685603,1.9904186746503476,2.142024861771925,2.2418265160487376,2.321328306653304,2.410146687135314,2.4291739408043513,2.5853381610707333,2.677000703348516,2.743001012161611,2.7222041253602094,2.8485904961515556,3.046144165983889,2.990350830783344,3.0228467411792304,3.0289086032396746,3.0262903497456035,3.047125590201335],
+"Model":["dep_var_hat~i(rel_year,ref=-1.0): 95.0%","dep_var_hat~i(rel_year,ref=-1.0): 95.0%","dep_var_hat~i(rel_year,ref=-1.0): 95.0%","dep_var_hat~i(rel_year,ref=-1.0): 95.0%","dep_var_hat~i(rel_year,ref=-1.0): 95.0%","dep_var_hat~i(rel_year,ref=-1.0): 95.0%","dep_var_hat~i(rel_year,ref=-1.0): 95.0%","dep_var_hat~i(rel_year,ref=-1.0): 95.0%","dep_var_hat~i(rel_year,ref=-1.0): 95.0%","dep_var_hat~i(rel_year,ref=-1.0): 95.0%","dep_var_hat~i(rel_year,ref=-1.0): 95.0%","dep_var_hat~i(rel_year,ref=-1.0): 95.0%","dep_var_hat~i(rel_year,ref=-1.0): 95.0%","dep_var_hat~i(rel_year,ref=-1.0): 95.0%","dep_var_hat~i(rel_year,ref=-1.0): 95.0%","dep_var_hat~i(rel_year,ref=-1.0): 95.0%","dep_var_hat~i(rel_year,ref=-1.0): 95.0%","dep_var_hat~i(rel_year,ref=-1.0): 95.0%","dep_var_hat~i(rel_year,ref=-1.0): 95.0%","dep_var_hat~i(rel_year,ref=-1.0): 95.0%","dep_var_hat~i(rel_year,ref=-1.0): 95.0%","dep_var_hat~i(rel_year,ref=-1.0): 95.0%","dep_var_hat~i(rel_year,ref=-1.0): 95.0%","dep_var_hat~i(rel_year,ref=-1.0): 95.0%","dep_var_hat~i(rel_year,ref=-1.0): 95.0%","dep_var_hat~i(rel_year,ref=-1.0): 95.0%","dep_var_hat~i(rel_year,ref=-1.0): 95.0%","dep_var_hat~i(rel_year,ref=-1.0): 95.0%","dep_var_hat~i(rel_year,ref=-1.0): 95.0%","dep_var_hat~i(rel_year,ref=-1.0): 95.0%","dep_var_hat~i(rel_year,ref=-1.0): 95.0%","dep_var_hat~i(rel_year,ref=-1.0): 95.0%","dep_var_hat~i(rel_year,ref=-1.0): 95.0%","dep_var_hat~i(rel_year,ref=-1.0): 95.0%","dep_var_hat~i(rel_year,ref=-1.0): 95.0%","dep_var_hat~i(rel_year,ref=-1.0): 95.0%","dep_var_hat~i(rel_year,ref=-1.0): 95.0%","dep_var_hat~i(rel_year,ref=-1.0): 95.0%","dep_var_hat~i(rel_year,ref=-1.0): 95.0%","dep_var_hat~i(rel_year,ref=-1.0): 95.0%","dep_var_hat~i(rel_year,ref=-1.0): 95.0%"]
 },
 "mapping":{
 "x":"Coefficient",
@@ -742,6 +754,42 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 "color":"Model"
 },
 "data_meta":{
+"series_annotations":[{
+"type":"int",
+"column":"level_0"
+},{
+"type":"int",
+"column":"index"
+},{
+"type":"str",
+"column":"Coefficient"
+},{
+"type":"float",
+"column":"Estimate"
+},{
+"type":"float",
+"column":"Std. Error"
+},{
+"type":"float",
+"column":"t value"
+},{
+"type":"float",
+"column":"Pr(>|t|)"
+},{
+"type":"float",
+"column":"2.5%"
+},{
+"type":"float",
+"column":"97.5%"
+},{
+"type":"str",
+"column":"Model"
+}]
+},
+"guides":{
+"y":{
+"title":"Estimate and 95.0% Confidence Interval"
+}
 },
 "ggsize":{
 "width":1200.0,
@@ -754,10 +802,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }
 },
 "kind":"plot",
-"scales":[{
-"name":"Estimate and 95% Confidence Interval",
-"aesthetic":"y"
-}],
+"scales":[],
 "layers":[{
 "geom":"point",
 "mapping":{
@@ -788,7 +833,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }],
 "metainfo_list":[]
 };
-           var plotContainer = document.getElementById("0didqg");
+           var plotContainer = document.getElementById("Dv8LC8");
            window.letsPlotCall(function() {{
                LetsPlot.buildPlotFromProcessedSpecs(plotSpec, -1, -1, plotContainer);
            }});
@@ -797,7 +842,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <p>To estimate a pooled effect, we need to slightly update the second stage formula:</p>
-<div id="b1b0a371" class="cell" data-execution_count="4">
+<div id="c8e5ea29" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>fit <span class="op">=</span> did2s(</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    df_het,</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    yname<span class="op">=</span><span class="st">"dep_var"</span>,</span>
@@ -837,10 +882,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td data-quarto-table-cell-role="th">C(treat)[T.True]</td>
 <td>2.230482</td>
 <td>0.024709</td>
-<td>90.271437</td>
+<td>90.271444</td>
 <td>0.0</td>
-<td>2.182052</td>
-<td>2.278911</td>
+<td>2.182054</td>
+<td>2.27891</td>
 </tr>
 </tbody>
 </table>
@@ -888,18 +933,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -931,7 +965,29 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
       var filterRegex = new RegExp('/' + window.location.host + '/');
@@ -939,7 +995,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
